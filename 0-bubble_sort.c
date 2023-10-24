@@ -6,7 +6,7 @@
  * @j: second integer
  */
 
-void swap_func(int *i, int*j)
+void swap_func(int *i, int *j)
 {
 	int temp = *i;
 	*i = j*;
@@ -20,12 +20,14 @@ void swap_func(int *i, int*j)
  */
 
 void bubble_sort(int *array, size_t size)
-{
-	for(size_t i = 0; i < size - 1; i++)
+{	
+	size_t i, j;
+
+	for(i = 0; i < size - 1; i++)
 	{
-		for(size_t j = 0; j < size - i - 1; j++)
+		for(j = 0; j < size - i - 1; j++)
 		{
-			if (array[j] > array[j+1])
+			if (array[j] > array[j + 1])
 			{
 				swap_func(&array[j], &array[j + 1]);
 			}
