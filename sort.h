@@ -18,6 +18,19 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * swap_func - function to swap integers in function
+ * @i: first integet
+ * @j: second integer
+ */
+
+void swap_func(int *i, int *j)
+{
+	int temp = *i;
+	*i = *j;
+	*j = temp;
+}
+
 
 void bubble_sort(int *array, size_t size);
 void swap_func(int *i, int *j);

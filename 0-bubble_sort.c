@@ -1,19 +1,6 @@
 #include "sort.h"
 
 /**
- * swap_func - function to swap integers in function
- * @i: first integet
- * @j: second integer
- */
-
-void swap_func(int *i, int *j)
-{
-	int temp = *i;
-	*i = *j;
-	*j = temp;
-}
-
-/**
  * bubble_sort - sorts an array in ascending order
  * @array: poniter to array to be sorted
  * @size: size of array
