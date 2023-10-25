@@ -47,12 +47,6 @@ void quick_sort_recursive(int *array, size_t low, size_t high)
 	{
 		size_t partition_index = lomuto_partition(array, low, high);
 
-/* 		for (i = low; i <= high; i++)
-		{
-			printf("%d ", array[i]);
-		}
-		printf("\n"); */
-
 		quick_sort_recursive(array, low, partition_index - 1);
 		quick_sort_recursive(array, partition_index + 1, high);
 	}
