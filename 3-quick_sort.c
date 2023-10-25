@@ -21,12 +21,12 @@ size_t lomuto_partition(int *array, size_t low, size_t high)
 		{
 			i++;
 			swap_func(&array[i], &array[j]);
-			print_array(array, size);
+			print_array(array, len(array));
 		}
 	}
 
 	swap_func(&array[i + 1], &array[high]);
-	print_array(array, size);
+	print_array(array, len(array));
 	return (i + 1);
 }
 
@@ -41,8 +41,6 @@ size_t lomuto_partition(int *array, size_t low, size_t high)
 
 void quick_sort_recursive(int *array, size_t low, size_t high)
 {
-	size_t i;
-
 	if (low < high)
 	{
 		size_t partition_index = lomuto_partition(array, low, high);
