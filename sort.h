@@ -26,7 +26,9 @@ typedef struct listint_s
 
 void swap_func(int *i, int *j)
 {
-	int temp = *i;
+	int temp;
+
+	temp = *i;
 	*i = *j;
 	*j = temp;
 }
