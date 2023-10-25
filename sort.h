@@ -1,5 +1,6 @@
 #ifndef SORT_H
 #define SORT_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -24,16 +25,8 @@ typedef struct listint_s
  * @j: second integer
  */
 
-void swap_func(int *i, int *j)
-{
-	int temp;
-
-	temp = *i;
-	*i = *j;
-	*j = temp;
-}
-
-
+void swap_func(int *i, int *j);
+void swap(int *a, int *b);
 void bubble_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);

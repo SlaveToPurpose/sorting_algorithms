@@ -6,6 +6,15 @@
  * @size: size of array
  */
 
+void swap_func(int *i, int *j)
+{
+	int temp;
+
+	temp = *i;
+	*i = *j;
+	*j = temp;
+}
+
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
