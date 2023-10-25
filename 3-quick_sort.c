@@ -21,12 +21,12 @@ size_t lomuto_partition(int *array, size_t low, size_t high)
 		{
 			i++;
 			swap_func(&array[i], &array[j]);
-			print_array(array, sizeof(array) / sizeof(array[0]));
+			print_array(array, high + 1);
 		}
 	}
 
 	swap_func(&array[i + 1], &array[high]);
-	print_array(array, sizeof(array) / sizeof(array[0]));
+	print_array(array, high + 1);
 	return (i + 1);
 }
 
