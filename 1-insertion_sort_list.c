@@ -40,7 +40,7 @@ void insertion_sort_list(listint_t **list)
 			node = head->next;
 			temp->prev = NULL;
 			temp->next = NULL;
-			
+
 			if (node->next)
 			{
 				temp->next = node->next;

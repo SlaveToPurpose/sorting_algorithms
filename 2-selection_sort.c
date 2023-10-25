@@ -8,30 +8,30 @@
 
 void selection_sort(int *array, size_t size)
 {
-    size_t i, j, indx;
-    int temp;
+	size_t i, j, indx;
+	int temp;
 
-    for (i = 0; i < size - 1; i++)
-    {
-	indx = i;
-	for (j = i + 1; j < size; j++)
+	for (i = 0; i < size - 1; i++)
 	{
-	    if (array[j] < array[indx])
-	    {
-		indx = j;
-	    }
-	}
-	if (indx == i)
-	{
-		continue;
-	}
-	else
-	{
-		temp = array[indx] + array[i];
-		array[indx] = temp - array[indx];
-		array[i] = temp - array[i];
+		indx = i;
+		for (j = i + 1; j < size; j++)
+		{
+			if (array[j] < array[indx])
+			{
+			indx = j;
+			}
+		}
+		if (indx == i)
+		{
+			continue;
+		}
+		else
+		{
+			temp = array[indx] + array[i];
+			array[indx] = temp - array[indx];
+			array[i] = temp - array[i];
 
-		print_array(array, size);
+			print_array(array, size);
+		}
 	}
-    }
 }
